@@ -16,18 +16,24 @@ overflow: hidden;
 }
 .header {
   justify-content: center;
-  z-index: 999;
   color: white;
   text-shadow: rgb(83, 82, 82) 2px 2px;
   margin: 0px;
 }
+h1, h3 {
+	position: relative;
+	z-index: 2;
+}
+
 .header h1, .header h3, .header .mountain {
   margin: 0px;
-  text-align: center;
+	text-align: center;
+	align-content: center;
 }
 
 .cloud {
-  top: -500px; left: auto; right: 15px;
+	z-index: 1;
+  top: -2800px; left: auto; right: 15px;
   width: 1800px; height: 1000px;
 	background:  rgba(255, 255, 255, 0.60);
   border-radius: 2000px;
@@ -41,38 +47,37 @@ overflow: hidden;
 }
 
 .mountain {
-  position: absolute;
-  left: 250px;
+  position: relative;
+  left: auto;
 	width: 0; 
 	height: 0;
-	border-left: 300px solid transparent;
-	border-right: 300px solid transparent;
-	border-bottom: 500px solid #787fa0;
+	border-left: 700px solid transparent;
+	border-right: 700px solid transparent;
+	border-bottom: 2300px solid #292b36;
 }
 
 .mountain:before {
 	content: "";
 	position: absolute;
 	top: 90px;
-	left:-300px;
+	left: -660px;
 	width: 0; 
 	height: 0;
-	border-left: 200px solid transparent;
-	border-right: 200px solid transparent;
-	border-bottom: 500px solid #9db3b4;
+	border-left: 600px solid transparent;
+	border-right: 600px solid transparent;
+	border-bottom: 2210px solid #3e4546;
 }
 
 .mountain:after {
 	content: "";
 	position: absolute;
-	z-index: 1;
 	top: 150px;
-	left: -200px;
+	left: -525px;
 	width: 0; 
 	height: 0;
-	border-left: 200px solid transparent;
-	border-right: 200px solid transparent;
-	border-bottom: 500px solid #446378;
+	border-left: 600px solid transparent;
+	border-right: 600px solid transparent;
+	border-bottom: 2150px solid #18232b;
 }
 
 
